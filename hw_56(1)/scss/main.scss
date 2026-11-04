@@ -1,0 +1,62 @@
+@use 'vars' as v;
+@use 'mixins' as m;
+@use 'keyframes';
+
+
+body {
+    font-size: v.$font_size_main;
+    font-family: v.$font_family;
+    background: v.$background_main;
+    min-height: 100vh;
+}
+.container {
+    max-width: v.$container_width;
+    margin: 0 auto;
+}
+
+.title {
+    &_1{
+        @include m.style_title(28px, 1.3, 600);
+
+        
+    }
+
+    &_2{
+        @include m.style_title(24px, 1.24, 500);
+    }
+
+    &_3{
+        @include m.style_title(21px, 1.2, 400);
+    }
+
+}
+
+
+.circle {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(#83e80b, #cd444a);
+    margin: 50px 0;
+    animation: rotate 2s linear infinite;
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+
+        background: linear-gradient(45deg, #80262b, #f4f13f);
+        box-shadow: 0 3px 4px 1px #3e3d39;
+
+        animation: moveCircle 4.5s linear infinite;
+
+        &:hover {
+        }
+    }
+}
+
+.circle__inner {
+    animation: moveCircle 4.5s linear infinite, spinCircle 2s linear infinite;
+}

@@ -1,0 +1,27 @@
+@use 'vars' as v;
+@use 'keyframes';
+
+
+body {
+    font-size: v.$font_size_main;
+    font-family: v.$font_family;
+    background: v.$background_main;
+    min-height: 100vh;
+    color: v.$text_color;
+}
+.container {
+    max-width: v.$container_width;
+    margin: 0 auto;
+}
+
+.header__title {
+    color: v.$title_color;
+}
+
+.section {
+    margin-bottom: v.$section_spacing;
+}
+
+.arrow-btn {
+    border-radius: v.$button_radius;
+}

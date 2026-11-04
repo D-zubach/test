@@ -1,0 +1,42 @@
+@keyframes scaleTitle {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+body {
+  font-size: 17px;
+  font-family: Verdana, Geneva, sans-serif;
+  background: linear-gradient(#ffddff, #3fc994);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title_1 {
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.title_2 {
+  font-size: 24px;
+  line-height: 1.24;
+  font-weight: 500;
+}
+.title_3 {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.title_1:hover,
+.title_2:hover,
+.title_3:hover {
+  animation: scaleTitle 0.3s ease forwards;
+  transform-origin: left center;
+}/*# sourceMappingURL=main.css.map */
