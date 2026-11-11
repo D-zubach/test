@@ -1,0 +1,80 @@
+@keyframes scaleTitle {
+    // При наведенні на всі заголовки на сторінці вони повинні збільшуватися на 10%;
+
+    0% {}
+
+    100% {}
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: scale(1);
+        left: 0;
+    }
+
+    25% {
+        transform: scale(1.2);
+        left: 80px;
+        top: 50px;
+    }
+
+    50% {
+        transform: scale(1.4);
+        left: 160px;
+        top: 100px;
+    }
+
+    75% {
+        transform: scale(1.2);
+        left: 80px;
+        top: 50px;
+    }
+
+    100% {
+        transform: scale(1);
+        left: 0;
+    }
+}
+
+@keyframes moveLeftBall {
+    0%, 50%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: rotate(30deg) translateX(-35px);
+    }
+}
+
+/* Тень левого шарика */
+@keyframes moveLeftShadow {
+    0%, 50%, 100% {
+        transform: translateX(0) scale(1);
+    }
+
+    25% {
+        transform: translateX(-30px) scale(0.8);
+    }
+}
+
+/* Правый шарик */
+@keyframes moveRightBall {
+    0%, 50%, 100% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: rotate(-30deg) translateX(35px);
+    }
+}
+
+/* Тень правого шарика */
+@keyframes moveRightShadow {
+    0%, 50%, 100% {
+        transform: translateX(0) scale(1);
+    }
+
+    75% {
+        transform: translateX(30px) scale(0.8);
+    }
+}
